@@ -6,7 +6,7 @@ import java.util.List;
 
 public class ArrayListDemo {
     public static void main(String[] args){
-        ArrayList<String> list=new ArrayList<String>();//Creating arraylist
+        List<String> list=new ArrayList<String>();//Creating arraylist
         list.add("Yansh");//Adding object in arraylist
         list.add("Priyanshu");
         list.add("Abhay");
@@ -62,7 +62,7 @@ public class ArrayListDemo {
         fruits.clear();
         System.out.println(fruits.isEmpty());
 
-        fruits = (ArrayList<String>)list.clone();
+        fruits = (ArrayList<String>) ((ArrayList<String>) list).clone();
         System.out.println(fruits);
 
         fruits.replaceAll(e -> e.toLowerCase());
