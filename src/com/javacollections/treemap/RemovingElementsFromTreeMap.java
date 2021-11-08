@@ -5,9 +5,9 @@ import java.util.TreeMap;
 
 public class RemovingElementsFromTreeMap {
 
-    public static void main(String args[])
+    public static void main(String[] args)
     {
-        Map<Integer, String> treeMap = new TreeMap<Integer, String>();
+        Map<Integer, String> treeMap = new TreeMap<>();
 
         // Inserting the Elements
         treeMap.put(3, "A");
